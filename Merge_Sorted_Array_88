@@ -6,7 +6,10 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function (nums1, m, nums2, n) {
-    const mergedArray = nums1.concat(nums2);
+    nums1.splice(m, n, ...nums2);
+
+    // Sort the merged array
+    nums1.sort((a, b) => a - b);
     
 
 };
